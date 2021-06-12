@@ -1,0 +1,24 @@
+{
+    "name": "navigator-server",
+    "version": "0.1.0",
+    "description": "Server side implementation of NAVIGATOR.",
+    "main": "server.js",
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KaoruNishikawa/NAVIGATOR-Server.git"
+    },
+    "author": "Kaoru Nishikawa",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KaoruNishikawa/NAVIGATOR-Server/issues"
+    },
+    "homepage": "https://github.com/KaoruNishikawa/NAVIGATOR-Server#readme"
+}
