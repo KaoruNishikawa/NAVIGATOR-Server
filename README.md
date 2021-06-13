@@ -1,30 +1,26 @@
-# python_pkg_template
+# NAVIGATOR-Server
 
-[![PyPI](https://img.shields.io/pypi/v/PACKAGENAME.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/PACKAGENAME/)
+<!-- [![PyPI](https://img.shields.io/pypi/v/PACKAGENAME.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/PACKAGENAME/)
 [![Python](https://img.shields.io/pypi/pyversions/PACKAGENAME.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/PACKAGENAME/)
 [![Test](https://img.shields.io/github/workflow/status/USERNAME/PACKAGENAME/Test?logo=github&label=Test&style=flat-square)](https://github.com/USERNAME/PACKAGENAME/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE) -->
 
-Python package template.
+Server side implementation of [NAVIGATOR](https://github.com/KaoruNishikawa/NAVIGATOR).
 
 ## Features
 
-This library provides:
-
-- something.
+In preperation...
 
 ## Installation
 
 ```shell
-pip install PACKAGENAME
+git clone https://github.com/KaoruNishikawa/NAVIGATOR-Server.git
 ```
 
 ## Usage
 
-### 1st module
-
-### 2nd module
+In preperation...
 
 ---
 
-- This library is using [Semantic Versioning](https://semver.org).
+This library is using [Semantic Versioning](https://semver.org).
