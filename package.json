@@ -15,10 +15,21 @@
         "type": "git",
         "url": "git+https://github.com/KaoruNishikawa/NAVIGATOR-Server.git"
     },
-    "author": "Kaoru Nishikawa",
+    "author": "Kaoru Nishikawa <k.nishikawa@a.phys.nagoya-u.ac.jp>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/KaoruNishikawa/NAVIGATOR-Server/issues"
     },
-    "homepage": "https://github.com/KaoruNishikawa/NAVIGATOR-Server#readme"
+    "homepage": "https://github.com/KaoruNishikawa/NAVIGATOR-Server#readme",
+    "dependencies": {
+        "fastify": "^3.17.0",
+        "fastify-static": "^4.2.2",
+        "fastify-websocket": "^3.2.0",
+        "node-pty": "^0.10.1",
+        "readline-sync": "^1.4.10"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": "12.x"
+    }
 }
