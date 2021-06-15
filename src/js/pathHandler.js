@@ -26,4 +26,11 @@ exports.pathHandler = (server) => {
         }
     })
 
+    /* Handle terminal input */
+    server.get("/mainterminal", { websocket: true }, (conn, req) => {
+        conn.socket.onmessage = (message) => {
+            conn.socket.send(message)
+        }
+    })
+
 }

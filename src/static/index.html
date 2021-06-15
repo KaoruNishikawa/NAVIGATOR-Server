@@ -10,24 +10,18 @@
 <body style="background-color: #FFF;">
     <h1>NAVIGATOR SERVER</h1>
     <p>
-        N<span style="font-variant: small-caps">ecst</span> Automated Visual Information Graph
+        N<span style="font-variant: small-caps">ecst</span>
+        Automated Visual Information Graph
         with Advanced Telescope Operation Runtime
     </p>
     <p>
         Running on Node.js <span id="node-version"></span>,
         Fastify <span id="fastify-version"></span>.
     </p>
-    <script>
-        const ws = new WebSocket(location.origin.replace(/^http/, "ws") + "/versions")
-        ws.onopen = () => { ws.send("") }
-        ws.onmessage = (message) => {
-            message = JSON.parse(message.data)
-            for (const tool of ["node", "fastify"]) {
-                let element = document.getElementById(`${tool}-version`)
-                if (element) { element.innerText = message[tool] }
-            }
-        }
-    </script>
+    <p>The server is listening at
+        <span id="serverLocation" style="font-size: 24pt; font-weight: bold;"></span>
+    </p>
+    <script src="serverInformationPage.js"></script>
 </body>
 
 </html>
