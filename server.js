@@ -32,10 +32,10 @@ const { pathHandler } = require("./src/js/clientHandler")
 pathHandler(server)
 
 /* Specify IP address and port where this server runs */
-const serverIP = utils.getMyIpAddress() || utils.userConsoleQuery("IP address of this PC?")
-const serverPort = process.env.NASCO_SERVER_PORT || utils.userConsoleQuery("Port?")
-process.env.NASCO_SERVER_IP = serverIP
-process.env.NASCO_SERVER_PORT = serverPort
+const serverIP = process.env.NAVIGATOR_SERVER_IP || utils.getMyIpAddress() || utils.userConsoleQuery("IP address of this PC?")
+const serverPort = process.env.NAVIGATOR_SERVER_PORT || utils.userConsoleQuery("Port for this server?")
+process.env.NAVIGATOR_SERVER_IP = serverIP
+process.env.NAVIGATOR_SERVER_PORT = serverPort
 
 /* Run the server */
 server.listen(serverPort, serverIP, (err, address) => {
