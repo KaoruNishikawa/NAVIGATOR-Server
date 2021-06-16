@@ -1,4 +1,4 @@
-const ws = new WebSocket(location.origin.replace(/^http/, "ws") + "/versions")
+const ws = new WebSocket(location.origin.replace(/^http/, "ws") + "/info")
 ws.onopen = () => { ws.send("") }
 ws.onmessage = (message) => {
     /* Display core package version */
