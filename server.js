@@ -1,7 +1,7 @@
 "use strict"
 
 /* Create server */
-const server = require("fastify")()
+const server = require("fastify")({ logger: true })
 
 /* Import dependencies */
 const utils = require("./src/js/utils")
@@ -19,9 +19,16 @@ server.register(fastifyStatic, {
 
 /* Enable server to use websocket */
 server.register(require("fastify-websocket"))
+let clients = new Set()
+server.addHook("onRequest", (req, reply, done) => {
+    let currentSize = clients.size
+    clients.add(req.raw.socket._peername["address"] + ":" + req.raw.socket._peername["port"])
+    console.log(clients)
+    done()
+})
 
 /* Handle request to non-existing path */
-const { pathHandler } = require("./src/js/pathHandler")
+const { pathHandler } = require("./src/js/clientHandler")
 pathHandler(server)
 
 /* Specify IP address and port where this server runs */

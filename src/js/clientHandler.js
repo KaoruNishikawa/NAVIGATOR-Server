@@ -1,5 +1,7 @@
 "use strict"
 
+
+
 exports.pathHandler = (server) => {
 
     /* Handle request with not existing path */
@@ -16,7 +18,7 @@ exports.pathHandler = (server) => {
     })
 
     /* Version confirmation */
-    server.get("/versions", { websocket: true }, (conn, req) => {
+    server.get("/info", { websocket: true }, (conn, req) => {
         conn.socket.onmessage = (message) => {
             let versions = {
                 node: process.versions["node"],
